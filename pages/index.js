@@ -32,7 +32,6 @@ export async function getStaticProps(context) {
     .readdirSync(PICTURES_PATH)
     .map(filename => path.join('/pictures', filename))
     .filter(isImage)
-    .reverse()
 
   return {
     props: {
