@@ -27,7 +27,7 @@ export async function getStaticProps(context) {
   var path = require('path')
   var fs = require('fs')
 
-  const PICTURES_PATH = path.join(process.cwd(), 'public/pictures')
+  const PICTURES_PATH = path.resolve('./public/pictures')
   const pictures = fs
     .readdirSync(PICTURES_PATH)
     .map(filename => "/pictures/" + filename)
