@@ -5,7 +5,7 @@ export default function Home({ pictures }) {
   return (
     <div className='p-10'>
       <Head>
-        <title>CASE</title>
+        <title>RICE</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
