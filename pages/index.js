@@ -30,7 +30,7 @@ export async function getStaticProps(context) {
   const PICTURES_PATH = path.resolve('./public/pictures')
   const pictures = fs
     .readdirSync(PICTURES_PATH)
-    .map(filename => "/pictures/" + filename)
+    .map(filename => path.join('/pictures', filename))
     .filter(isImage)
     .reverse()
 
